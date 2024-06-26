@@ -1,5 +1,5 @@
 # Usar una imagen base de OpenJDK
-FROM openjdk:11
+FROM openjdk:17-jdk-slim
 
 # Establecer el directorio de trabajo
 WORKDIR /app
@@ -15,3 +15,4 @@ EXPOSE 25565
 
 # Ejecutar el servidor de Minecraft
 CMD ["java", "-Xmx1024M", "-Xms1024M", "-jar", "minecraft_server.jar", "nogui"]
+
