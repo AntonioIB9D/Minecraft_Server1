@@ -5,7 +5,7 @@ FROM openjdk:17-jdk-slim
 WORKDIR /app
 
 # Descargar el servidor de Minecraft
-RUN wget -O minecraft_server.jar https://launcher.mojang.com/v1/objects/653da63dfc1b98ae7bc5e0ac6f2a8402e8a9b5c5/server.jar
+RUN wget -O minecraft_server.jar https://piston-data.mojang.com/v1/objects/450698d1863ab5180c25d7c804ef0fe6369dd1ba/server.jar
 
 # Aceptar el EULA
 RUN echo "eula=true" > eula.txt
